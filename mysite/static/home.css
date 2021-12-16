@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+.principal{
+    text-align: center;
+    position: fixed;
+    background: #a3aebb;
+    width: 100%;
+    height: 10%;
+}
+.logo{
+    width: 180px;
+}
+.nav_menu{
+    /* background: rgb(255, 255, 255); */
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    padding: 2px 10px;
+    display: inline-block;
+    list-style: none;
+}
+.menu_nav{
+    position: relative;
+    padding: 2px 10px;
+    font-size: 20px;
+    display: inline-block;
+}
+.login{
+    border-radius: 5%;
+    text-align: left;
+    z-index: 1;
+    background: #a3aebb;
+    width: 30%;
+    height: 40%;
+    position:fixed;
+    top: 40%;
+    left: 35%;
+    right: 35%;
+}
+.lablelo{
+    top: 1%;
+    left: 37%;
+    font-size: 30px;
+    color: black;
+    position: relative;
+
+}
+.logininfo{
+    position: relative;
+    top: 10%;
+}
+.lable1{
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    font-size: 25px;
+    color: black;
+}
+.lable2{
+    position: absolute;
+    top: 120%;
+    left: 39%;
+    font-size: 25px;
+    color: black;
+}
+.avisoerro{
+    list-style: none;
+    position:  relative;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    background: red;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+
+}
+.flashs{
+    list-style: none;
+}
+.usuario{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.senha{
+    position: absolute;
+    top: 160%;
+    left: 25%;
+    width: 200px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+.btjoin{
+    font-size: 20px;
+    position: absolute;
+    top: 80%;
+    left: 39%;
+
+}
+.img{
+    z-index: 0;
+    position: fixed;
+    width:100%;
+    height: 100%;
+    opacity: 0.7;
+}
+.backg{
+
+    width:100%;
+    height: 100%;
+}

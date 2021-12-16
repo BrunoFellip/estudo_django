@@ -1,10 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/home.css') }}">
+    <title>TAXALL</title>
 </head>
+
 <body>
-    <h1>BEM VINDO AO TESTE</h1>
+    <div class="principal">
+        <nav>
+            <div class="nav">
+                <img class="logo" src="{{ url_for('static', filename='img/logo-taxall.png') }}">
+
+            </div>
+
+        </nav>
+
+        <div class="login">
+            <form action="{{url_for('login')}}" method="post">
+                <label class="lablelo" for="">LOGIN</label>
+                <div class="logininfo">
+                    <label class="lable1" for="">USUARIO</label><br>
+                    <input class="usuario" type="text" name="usuario" placeholder="DIGITE SEU LOGIN" required><br><br>
+                    <label class="lable2" for="">SENHA</label><br>
+                    <input class="senha" type="password" name="senha" placeholder="DIGITE SUA SENHA" required>
+                </div>
+                <button class="btjoin" type="submit">ENTRAR</button>
+            </form>
+        </div>
+        <div class="img">
+            <img class="backg" src="{{ url_for('static', filename='img/pexels-photo-241544.jpeg') }}">
+        </div>
+    </div>
+
+    <!--
+    <div class="aavisoerro">
+        <label class="label3" for="">USUARIO OU SENHA INCORRETO</label>
+    </div> -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    <div class="avisoerro">
+        <ul class=flashs>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endif %}
+    {% endwith %}
+
+
+
 </body>
+
 </html>
